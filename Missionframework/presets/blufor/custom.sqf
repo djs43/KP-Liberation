@@ -20,15 +20,15 @@
     The same classnames for different purposes may cause various unpredictable issues with player actions.
     Or not, just don't try!
 */
-FOB_typename = "Land_Cargo_HQ_V1_F";                                    // This is the main FOB HQ building.
+FOB_typename = "Land_ArmoryA_Green";                                    // This is the main FOB HQ building.
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
 FOB_truck_typename = "B_Truck_01_box_F";                                // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "B_Truck_01_medical_F";                        // This is the mobile respawn (and medical) truck.
-huron_typename = "B_Heli_Transport_03_unarmed_F";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
-crewman_classname = "B_crew_F";                                         // This defines the crew for vehicles.
-pilot_classname = "B_Helipilot_F";                                      // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "B_Heli_Light_01_F";              // These are the little birds which spawn on the Freedom or at Chimera base.
+huron_typename = "OPTRE_Pelican_unarmed";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+crewman_classname = "OPTRE_UNSC_Marine_Soldier_Crewman";                                         // This defines the crew for vehicles.
+pilot_classname = "OPTRE_UNSC_Marine_Pilot";                                      // This defines the pilot for helicopters.
+KP_liberation_little_bird_classname = "OPTRE_UNSC_falcon_unarmed";              // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "B_Truck_01_transport_F";               // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
@@ -50,164 +50,22 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["B_Soldier_lite_F",15,0,0],                                        // Rifleman (Light)
-    ["B_Soldier_F",20,0,0],                                             // Rifleman
-    ["B_soldier_LAT_F",30,0,0],                                         // Rifleman (AT)
-    ["B_Soldier_GL_F",25,0,0],                                          // Grenadier
-    ["B_soldier_AR_F",25,0,0],                                          // Autorifleman
-    ["B_HeavyGunner_F",35,0,0],                                         // Heavygunner
-    ["B_soldier_M_F",30,0,0],                                           // Marksman
-    ["B_Sharpshooter_F",40,0,0],                                        // Sharpshooter
-    ["B_soldier_AT_F",50,10,0],                                         // AT Specialist
-    ["B_soldier_AA_F",50,10,0],                                         // AA Specialist
-    ["B_medic_F",30,0,0],                                               // Combat Life Saver
-    ["B_engineer_F",30,0,0],                                            // Engineer
-    ["B_soldier_exp_F",30,0,0],                                         // Explosives Specialist
-    ["B_recon_F",20,0,0],                                               // Recon Scout
-    ["B_recon_LAT_F",30,0,0],                                           // Recon Scout (AT)
-    ["B_recon_M_F",30,0,0],                                             // Recon Marksman
-    ["B_Recon_Sharpshooter_F",40,0,0],                                  // Recon Sharpshooter
-    ["B_recon_medic_F",30,0,0],                                         // Recon Paramedic
-    ["B_recon_exp_F",30,0,0],                                           // Recon Demolition Expert
-    ["B_sniper_F",70,5,0],                                              // Sniper
-    ["B_ghillie_ard_F",70,5,0],                                         // Sniper (Arid)
-    ["B_ghillie_lsh_F",70,5,0],                                         // Sniper (Lush)
-    ["B_ghillie_sard_F",70,5,0],                                        // Sniper (Semi-Arid)
-    ["B_spotter_F",20,0,0],                                             // Spotter
-    ["B_crew_F",10,0,0],                                                // Crewman
-    ["B_soldier_PG_F",20,0,0],                                          // Para Trooper
-    ["B_helicrew_F",10,0,0],                                            // Helicopter Crew
-    ["B_Helipilot_F",10,0,0],                                           // Helicopter Pilot
-    ["B_Pilot_F",10,0,0]                                                // Pilot
+    ["OPTRE_UNSC_Marine_Soldier_Breacher",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_AT_Specialist",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Autorifleman",0,0,0]
 ];
 
 light_vehicles = [
-    ["B_Quadbike_01_F",50,0,25],                                        // Quad Bike
-    ["B_LSV_01_unarmed_F",75,0,50],                                     // Prowler
-    ["B_LSV_01_armed_F",75,40,50],                                      // Prowler (HMG)
-    ["B_LSV_01_AT_F",75,60,50],                                         // Prowler (AT)
-    ["B_MRAP_01_F",100,0,50],                                           // Hunter
-    ["B_MRAP_01_hmg_F",100,40,50],                                      // Hunter (HMG)
-    ["B_MRAP_01_gmg_F",100,60,50],                                      // Hunter (GMG)
-    ["I_MRAP_03_F",100,0,50],                                           // Strider
-    ["I_MRAP_03_hmg_F",100,40,50],                                      // Strider (HMG)
-    ["I_MRAP_03_gmg_F",100,60,50],                                      // Strider (GMG)
-    ["rhsusf_m1025_w",100,0,50],                                        // M1025A2
-    ["rhsusf_m1025_w_m2",100,40,50],                                    // M1025A2 (M2)
-    ["rhsusf_m1025_w_mk19",100,60,50],                                  // M1025A2 (Mk19)
-    ["rhsusf_m998_w_2dr_fulltop",100,0,50],                             // M1097A2 (2D)
-    ["rhsusf_m998_w_2dr_halftop",100,0,50],                             // M1097A2 (2D / open back)
-    ["rhsusf_M1220_usarmy_wd",120,0,60],                                // M1220
-    ["rhsusf_M1220_M2_usarmy_wd",120,40,60],                            // M1220 (M2)
-    ["rhsusf_M1220_MK19_usarmy_wd",120,60,60],                          // M1220 (Mk19)
-    ["rhsusf_M1232_usarmy_wd",140,0,60],                                // M1220
-    ["rhsusf_M1232_M2_usarmy_wd",140,40,60],                            // M1220 (M2)
-    ["rhsusf_M1232_MK19_usarmy_wd",140,60,60],                          // M1220 (Mk19)
-    ["BWA3_Eagle_Fleck",100,0,50],                                      // Eagle IV
-    ["BWA3_Eagle_FLW100_Fleck",100,100,50],                             // Eagle IV (FLW 100)
-    ["rhsusf_M1230a1_usarmy_wd",120,0,60],                              // M1230A1 (MEDEVAC)
-    ["B_Truck_01_transport_F",125,0,75],                                // HEMTT Transport
-    ["B_Truck_01_covered_F",125,0,75],                                  // HEMTT Transport (Covered)
-    ["rhsusf_M1083A1P2_wd_open_fmtv_usarmy",125,0,75],                  // M1083A1P2 Transport
-    ["rhsusf_M1083A1P2_wd_fmtv_usarmy",125,0,75],                       // M1083A1P2 Transport (Covered)
-    ["rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy",100,0,50],               // M1083A1P2
-    ["rhsusf_M977A4_BKIT_usarmy_wd",125,0,75],                          // M977A4 BKIT
-    ["rhsusf_M977A4_BKIT_M2_usarmy_wd",125,40,75],                      // M977A4 BKIT (HMG)
-    ["rhsusf_M1117_W",150,50,50],                                       // M1117 ASV
-    ["B_UGV_01_F",150,0,50],                                            // UGV Stomper
-    ["B_UGV_01_rcws_F",150,40,50],                                      // UGV Stomper (RCWS)
-    ["B_Boat_Transport_01_F",100,0,25],                                 // Assault Boat
-    ["B_Boat_Armed_01_minigun_F",200,80,75],                            // Speedboat Minigun
-    ["rhsusf_mkvsoc",250,200,100],                                      // Mk.V SOCOM
-    ["B_SDV_01_F",150,0,50]                                             // SDV
+	["OPTRE_M12_LRV",0,0,0],
+	["OPTRE_M12G1_LRV",0,0,0]
 ];
 
 heavy_vehicles = [
-    ["rhsusf_m113_usarmy",200,40,100],                                  // M113A3 (M2)
-    ["rhsusf_m113_usarmy_MK19",200,60,100],                             // M113A3 (Mk19)
-    ["rhsusf_m113_usarmy_medical",200,0,100],                           // M113A3 (Medical)
-    ["I_LT_01_scout_F",200,0,125],                                      // AWC 302 Nyx (AA)
-    ["B_APC_Wheeled_01_cannon_F",200,75,125],                           // AMV-7 Marshall
-    ["I_APC_Wheeled_03_cannon_F",200,75,125],                           // AFV-4 Gorgon
-    ["B_APC_Tracked_01_rcws_F",300,100,150],                            // IFV-6c Panther
-    ["I_APC_tracked_03_cannon_F",300,150,150],                          // FV-720 Mora
-    ["RHS_M2A2_BUSKI_WD",300,200,150],                                  // M2A2ODS (Busk I)
-    ["BWA3_Puma_Fleck",300,225,150],                                    // IFV Puma
-    ["RHS_M2A3_BUSKIII_wd",300,250,175],                                // M2A3 (Busk III)
-    ["B_APC_Tracked_01_AA_F",300,250,175],                              // IFV-6a Cheetah
-    ["I_LT_01_AA_F",300,250,175],                                       // AWC 302 Nyx (AA)
-    ["I_LT_01_AT_F",300,250,175],                                       // AWC 302 Nyx (AT)
-    ["I_LT_01_cannon_F",300,250,175],                                   // AWC 302 Nyx (Cannon)
-    ["RHS_M6_wd",300,250,175],                                          // M6A2
-    ["B_MBT_01_cannon_F",400,300,200],                                  // M2A1 Slammer
-    ["CUP_B_Challenger2_NATO",400,300,200],                             // FV4034 Challenger 2
-    ["I_MBT_03_cannon_F",400,300,200],                                  // MBT-52 Kuma
-    ["rhsusf_m1a1aim_tuski_wd",400,350,225],                            // M1A1SA (Tusk I)
-    ["B_MBT_01_TUSK_F",500,350,225],                                    // M2A4 Slammer UP
-    ["rhsusf_m1a2sep1tuskiiwd_usarmy",500,400,250],                     // M1A2SEPv1 (Tusk II)
-    ["BWA3_Leopard2_Fleck",500,400,250],                                // MBT Leopard 2A6M
-    ["B_AFV_Wheeled_01_cannon_F",500,500,250],                          // Rhino MGS
-    ["B_AFV_Wheeled_01_up_cannon_F",550,550,250],                       // Rhino MGS UP
-    ["B_MBT_01_arty_F",600,1250,300],                                   // M4 Scorcher
-    ["rhsusf_m109_usarmy",600,1250,300],                                // M109A6
-    ["B_MBT_01_mlrs_F",800,1750,400]                                    // M5 Sandstorm MLRS
+	["OPTRE_M808B_UNSC",0,0,0]
 ];
 
 air_vehicles = [
-    ["B_UAV_01_F",75,0,25],                                             // AR-2 Darter
-    ["B_UAV_06_F",80,0,30],                                             // AL-6 Pelican (Cargo)
-    ["B_Heli_Light_01_F",200,0,100],                                    // MH-9 Hummingbird
-    ["B_Heli_Light_01_dynamicLoadout_F",200,100,100],                   // AH-9 Pawnee
-    ["RHS_MELB_MH6M",200,0,100],                                        // MH-6M Little Bird
-    ["RHS_MELB_AH6M",200,200,100],                                      // AH-6M Pawnee
-    ["I_Heli_light_03_unarmed_F",225,0,125],                            // WY-55 Hellcat
-    ["I_Heli_light_03_dynamicLoadout_F",225,200,125],                   // WY-55 Hellcat (Armed)
-    ["RHS_UH1Y_UNARMED",225,0,125],                                     // UH-1Y (Unarmed)
-    ["RHS_UH1Y_GS",225,200,125],                                        // UH-1Y (Ground Suppression)
-    ["B_Heli_Attack_01_dynamicLoadout_F",500,400,200],                  // AH-99 Blackfoot
-    ["RHS_AH1Z",500,500,200],                                           // AH-1Z (Multi-Role)
-    ["RHS_AH64D_wd",750,750,250],                                       // AH-64D (Multi-Role)
-    ["BWA3_Tiger_RMK_Universal",750,750,250],                           // UH Tiger RMK (Universal)
-    ["B_Heli_Transport_01_F",250,80,150],                               // UH-80 Ghost Hawk
-    ["B_Heli_Transport_01_camo_F",250,80,150],                          // UH-80 Ghost Hawk (Camo)
-    ["RHS_UH60M2",250,0,150],                                           // UH-60M (Unarmed)
-    ["RHS_UH60M",250,80,150],                                           // UH-60M
-    ["RHS_UH60M_MEV2",300,0,150],                                       // UH-60M MEV2
-    ["RHS_CH_47F",275,80,175],                                          // CH-47 Chinook (Armed)
-    ["I_Heli_Transport_02_F",275,0,175],                                // CH-49 Mohawk
-    ["rhsusf_CH53E_USMC",300,0,175],                                    // CH-53E Super Stallion
-    ["rhsusf_CH53E_USMC_GAU21_D",300,100,175],                          // CH-53E Super Stallion (GAU-21)
-    ["B_Heli_Transport_03_F",300,80,175],                               // CH-67 Huron (Armed)
-    ["USAF_C130J",200,0,250],                                           // C-130J Super Hercules
-    ["USAF_C130J_Cargo",200,0,250],                                     // C-130J Super Hercules (Cargo)
-    ["USAF_C17",500,0,400],                                             // C-17 Globemaster III
-    ["usaf_kc135",600,0,2500],                                          // KC-135 Stratotanker
-    ["B_UAV_02_dynamicLoadout_F",400,400,200],                          // MQ-4A Greyhawk
-    ["B_T_UAV_03_dynamicLoadout_F",450,500,250],                        // MQ-12 Falcon
-    ["B_UAV_05_F",500,500,200],                                         // UCAV Sentinel
-    ["USAF_RQ4A",500,0,200],                                            // RQ-4A Global Hawk
-    ["USAF_MQ9",500,750,200],                                           // MQ-9 Reaper
-    ["I_Plane_Fighter_03_dynamicLoadout_F",500,400,350],                // A-143 Buzzard
-    ["B_Plane_CAS_01_dynamicLoadout_F",1000,800,400],                   // A-164 Wipeout (CAS)
-    ["RHS_A10",1000,1000,400],                                          // A-10A (CAS)
-    ["USAF_A10",1500,1000,400],                                         // A-10C Thunderbolt II
-    ["I_Plane_Fighter_04_F",1000,1200,400],                             // A-149 Gryphon
-    ["FIR_F15C",1250,1250,450],                                         // F-15C Eagle
-    ["FIR_F15D",1250,1250,450],                                         // F-15D Eagle
-    ["FIR_F15E",1250,1500,450],                                         // F-15E Strike Eagle
-    ["JS_JC_FA18E",1500,1750,450],                                      // F/A-18 E Super Hornet
-    ["JS_JC_FA18F",1500,1750,450],                                      // F/A-18 F Super Hornet
-    ["USAF_F22",1800,2000,500],                                         // F-22A Raptor
-    ["USAF_F22_EWP_AA",1800,2100,500],                                  // F-22A Raptor (EWP-AA)
-    ["USAF_F22_EWP_AG",1800,2100,500],                                  // F-22A Raptor (EWP-AG)
-    ["USAF_F22_Heavy",1800,2250,500],                                   // F-22A Raptor (Heavy)
-    ["USAF_F35A_STEALTH",2250,2000,750],                                // F-35A Lightning II
-    ["USAF_F35A",2250,2250,750],                                        // F-35A Lightning II (Heavy)
-    ["B_Plane_Fighter_01_F",1500,1750,450],                             // F/A-181 Black Wasp II
-    ["B_Plane_Fighter_01_Stealth_F",1500,1750,450],                     // F/A-181 Black Wasp II (Stealth)
-    ["B_T_VTOL_01_armed_F",750,1500,500],                               // V-44 X Blackfish (Armed)
-    ["B_T_VTOL_01_infantry_F",750,0,500],                               // V-44 X Blackfish (Infantry)
-    ["B_T_VTOL_01_vehicle_F",750,0,500]                                 // V-44 X Blackfish (Vehicle)
+
 ];
 
 static_vehicles = [
