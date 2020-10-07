@@ -31,18 +31,18 @@ opfor_squad_leader = "OPTRE_Ins_URF_Rifleman_BR";                               
 opfor_team_leader = "OPTRE_Ins_URF_Rifleman_BR";                                   // Team Leader
 opfor_sentry = "OPTRE_Ins_URF_Rifleman_BR";                                      // Rifleman (Lite)
 opfor_rifleman = "OPTRE_Ins_URF_Rifleman_BR";                                         // Rifleman
-opfor_rpg = "OPTRE_Ins_URF_Rifleman_BR";                                          // Rifleman (LAT)
-opfor_grenadier = "OPTRE_Ins_URF_Rifleman_BR";                                     // Grenadier
-opfor_machinegunner = "OPTRE_Ins_URF_Rifleman_BR";                                 // Autorifleman
-opfor_heavygunner = "OPTRE_Ins_URF_Rifleman_BR";                                  // Heavy Gunner
-opfor_marksman = "OPTRE_Ins_URF_Rifleman_BR";                                       // Marksman
-opfor_sharpshooter = "OPTRE_Ins_URF_Rifleman_BR";                                // Sharpshooter
-opfor_sniper = "OPTRE_Ins_URF_Rifleman_BR";                                            // Sniper
-opfor_at = "OPTRE_Ins_URF_Rifleman_BR";                                            // AT Specialist
-opfor_aa = "OPTRE_Ins_URF_Rifleman_BR";                                            // AA Specialist
-opfor_medic = "OPTRE_Ins_URF_Rifleman_BR";                                              // Combat Life Saver
-opfor_engineer = "OPTRE_Ins_URF_Rifleman_BR";                                        // Engineer
-opfor_paratrooper = "OPTRE_Ins_URF_Rifleman_BR";                                   // Paratrooper
+opfor_rpg = "OPTRE_Ins_URF_Rifleman_AT";                                          // Rifleman (LAT)
+opfor_grenadier = "OPTRE_Ins_URF_Grenadier";                                     // Grenadier
+opfor_machinegunner = "OPTRE_Ins_URF_Autorifleman";                                 // Autorifleman
+opfor_heavygunner = "OPTRE_Ins_URF_Autorifleman";                                  // Heavy Gunner
+opfor_marksman = "OPTRE_Ins_URF_Marksman";                                       // Marksman
+opfor_sharpshooter = "OPTRE_Ins_URF_Marksman";                                // Sharpshooter
+opfor_sniper = "OPTRE_Ins_URF_Sniper";                                            // Sniper
+opfor_at = "OPTRE_Ins_URF_AT_Specialist";                                            // AT Specialist
+opfor_aa = "OPTRE_Ins_URF_AA_Specialist";                                            // AA Specialist
+opfor_medic = "OPTRE_Ins_URF_Medic";                                              // Combat Life Saver
+opfor_engineer = "OPTRE_Ins_URF_Engineer";                                        // Engineer
+opfor_paratrooper = "OPTRE_Ins_URF_Rifleman_AR";                                   // Paratrooper
 
 
 // Enemy vehicles used by secondary objectives.
