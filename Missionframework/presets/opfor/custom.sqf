@@ -7,6 +7,25 @@
 */
 
 // Enemy infantry classes
+<<<<<<< HEAD
+opfor_officer = "OPTRE_Ins_URF_Rifleman_BR";                                          // Officer
+opfor_squad_leader = "OPTRE_Ins_URF_Rifleman_BR";                         // Squad Leader
+opfor_team_leader = "OPTRE_Ins_URF_Rifleman_BR";                           // Team Leader
+opfor_sentry = "OPTRE_Ins_URF_Rifleman_BR";                                      // Rifleman (Lite)
+opfor_rifleman = "OPTRE_Ins_URF_Rifleman_BR";                                         // Rifleman
+opfor_rpg = "OPTRE_Ins_URF_Rifleman_AT";                                          // Rifleman (LAT)
+opfor_grenadier = "OPTRE_Ins_URF_Grenadier";                                     // Grenadier
+opfor_machinegunner = "OPTRE_Ins_URF_Autorifleman";                                 // Autorifleman
+opfor_heavygunner = "OPTRE_Ins_URF_Autorifleman";                                  // Heavy Gunner
+opfor_marksman = "OPTRE_Ins_URF_Marksman";                                       // Marksman
+opfor_sharpshooter = "OPTRE_Ins_URF_Marksman";                                // Sharpshooter
+opfor_sniper = "OPTRE_Ins_URF_Sniper";                                            // Sniper
+opfor_at = "OPTRE_Ins_URF_AT_Specialist";                                            // AT Specialist
+opfor_aa = "OPTRE_Ins_URF_AA_Specialist";                                            // AA Specialist
+opfor_medic = "OPTRE_Ins_URF_Medic";                                              // Combat Life Saver
+opfor_engineer = "OPTRE_Ins_URF_Engineer";                                        // Engineer
+opfor_paratrooper = "OPTRE_Ins_URF_Rifleman_AR";                                   // Paratrooper
+=======
 opfor_officer = "O_officer_F";                                          // Officer
 opfor_squad_leader = "O_Soldier_SL_F";                                  // Squad Leader
 opfor_team_leader = "O_Soldier_TL_F";                                   // Team Leader
@@ -24,6 +43,7 @@ opfor_aa = "O_Soldier_AA_F";                                            // AA Sp
 opfor_medic = "O_medic_F";                                              // Combat Life Saver
 opfor_engineer = "O_engineer_F";                                        // Engineer
 opfor_paratrooper = "O_soldier_PG_F";                                   // Paratrooper
+>>>>>>> parent of bd009fa1... Update custom.sqf
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "O_MRAP_02_F";                                             // Ifrit
@@ -43,6 +63,16 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
+<<<<<<< HEAD
+    "OPTRE_Ins_ER_Warlord",                                             // Pistol man
+    "OPTRE_Ins_ER_Terrorist",                                           // Shotgun
+    "OPTRE_Ins_ER_Deserter_GL",                                         // GL
+    "OPTRE_Ins_ER_Farmer",                                              // Shotgun
+    "OPTRE_Ins_ER_Rebel_AT",                                            // Rifleman (AT)
+    "OPTRE_Ins_ER_Guerilla_AR",                                         // Autorifleman
+    "OPTRE_Ins_ER_Militia_MG"											// MG
+    "OPTRE_Ins_ER_Surgeon"                                              // Medic
+=======
     "O_soldierU_F",                                                     // Rifleman (Lite)
     "O_soldierU_F",                                                     // Rifleman (Lite)
     "O_soldierU_F",                                                     // Rifleman
@@ -52,6 +82,7 @@ militia_squad = [
     "O_soldierU_M_F",                                                   // Marksman
     "O_soldierU_medic_F",                                               // Medic
     "O_engineer_U_F"                                                    // Engineer
+>>>>>>> parent of bd009fa1... Update custom.sqf
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
