@@ -88,7 +88,7 @@ militia_squad = [
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "O_LSV_02_armed_F"                                                  // Qilin (armed)
+    "OPTRE_M12_LRV_ins"                                                  // warthog armed
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
