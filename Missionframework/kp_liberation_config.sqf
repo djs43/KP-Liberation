@@ -538,6 +538,7 @@ KP_liberation_allowed_items_extension = [
 
 /* - Configuration settings for crates transported by vehicles.
 Format = ["classname", distance behind vehicle to unload crate, attachTo positions for each box],    */
+//Boxes are 1.5m wide and 1.1 tall
 KPLIB_transportConfigs = [
     ["B_Heli_Transport_03_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
     ["B_Heli_Transport_03_unarmed_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
@@ -707,7 +708,11 @@ KPLIB_transportConfigs = [
     ["uns_m37b1", -5, [0,-1.8,0.15]],
     ["uns_nvatruck_mg", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
     ["uns_nvatruck_open", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]]
+    ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
+	["LM_OPCAN_D77_U_MC_WDL", -10, [0,6,-2.3],[0,4.5,-2.3],[0,3,-2.3],[0,1.5,-2.3],[0,6,-1.1],[0,4.5,-1.1],[0,3,-1.1],[0,1.5,-1.1]],				//Pelican 8 crates
+	["OPTRE_M914_RV",-5,[0,-3,-1]],																													//Recovery Hog
+	["OPTRE_M313_UNSC",-10, [-1.5,-5.3,-3.32],[-1.5,-6.8,-3.32],[0,-5.3,-3.32],[0,-6.8,-3.32],[1.5,-5.3,-3.32],[1.5,-6.8,-3.32],[-1.5,-5.3,-2.15],[-1.5,-6.8,-2.15],[0,-5.3,-2.15],[0,-6.8,-2.15],[1.5,-5.3,-2.15],[1.5,-6.8,-2.15]] 	//For now elephant gets 12 crates
+	
 ];
 
 /* Various other settings.
