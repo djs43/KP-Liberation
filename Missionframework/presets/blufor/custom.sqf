@@ -50,36 +50,57 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["OPTRE_UNSC_Marine_Soldier_Breacher",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Breacher",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Rifleman_Light",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Rifleman_AR",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Assist_Autorifleman",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Autorifleman",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Rifleman_AT",0,0,0],
 	["OPTRE_UNSC_Marine_Soldier_AT_Specialist",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Autorifleman",0,0,0]
+	["OPTRE_UNSC_Marine_Soldier_AA_Specialist",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Marksman",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Grenadier",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_UAV_Op",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_TeamLead",0,0,0],
+	["OPTRE_UNSC_Marine_Soldier_Corpsman",0,0,0]
 ];
 
 light_vehicles = [
-	["OPTRE_M12_LRV",0,0,0],
-	["OPTRE_M12G1_LRV",0,0,0]
+	["OPTRE_M274_ATV",0,0,0],											//Mongoose
+	["OPTRE_M12_FAV",0,0,0],											//Warthog Unarmed (driver + 3 passenger)
+	["OPTRE_M813_TT",0,0,0],											//Warthog Transport (Driver + 7 passenger)
+	["OPTRE_M12_LRV",0,0,0],											//Warthog MG
+	["OPTRE_M12A1_LRV",0,0,0],											//Warthog Rocket
+	["OPTRE_M12R_AA",0,0,0],											//Warthog AA
+	["OPTRE_M12G1_LRV",0,0,0],											//Warthog Guass
+	["LM_OPCAN_AFV102_MC_U_WDL",0,0,0],									//Unarmed NATO APC
+	["LM_OPCAN_AFV102_MC_WDL",0,0,0]									//Armed Nato APC
+	
 ];
 
 heavy_vehicles = [
-	["OPTRE_M808B_UNSC",0,0,0]
+	["OPTRE_M808B_UNSC",0,0,0],											// Scorpion
+	["OPTRE_M850_UNSC",0,0,0],											//Grizzly
+	["OPTRE_M313_UNSC",0,0,0]											//Elephant
 ];
 
 air_vehicles = [
-
+	["OPTRE_UNSC_falcon_unarmed",0,0,0],								//Falcon unarmed (pilot + 7 yeats)
+	["OPTRE_UNSC_falcon",0,0,0],										//Falcon Armed
+	["LM_OPCAN_D77_U_MC_WDL",0,0,0],									//Pelican Unarmed (pilot + copilot + 12 seats)
+	["OPTRE_Pelican_armed",0,0,0],										//Pelican Armed
+	["OPTRE_UNSC_Hornet",0,0,0]											//Hornet
 ];
 
 static_vehicles = [
-    ["B_HMG_01_F",25,40,0],                                             // Mk30A HMG .50
-    ["B_HMG_01_high_F",25,40,0],                                        // Mk30 HMG .50 (Raised)
-    ["B_HMG_01_A_F",35,40,0],                                           // Mk30 HMG .50 (Autonomous)
-    ["B_GMG_01_F",35,60,0],                                             // Mk32A GMG 20mm
-    ["B_GMG_01_high_F",35,60,0],                                        // Mk32 GMG 20mm (Raised)
-    ["B_GMG_01_A_F",45,60,0],                                           // Mk32 GMG 20mm (Autonomous)
-    ["B_static_AT_F",50,100,0],                                         // Static Titan Launcher (AT)
-    ["B_static_AA_F",50,100,0],                                         // Static Titan Launcher (AA)
-    ["B_Mortar_01_F",80,150,0],                                         // Mk6 Mortar
-    ["RHS_M119_WD",100,200,0],                                          // M119A2
-    ["B_SAM_System_03_F",250,500,0]                                     // MIM-145 Defender
+    ["OPTRE_Static_M247T_Tripod",25,40,0],                              // M240
+    ["OPTRE_Static_M247H_Tripod",25,40,0],                              // .50 chaingun
+    ["OPTRE_Static_M247H_Shielded_Tripod",35,40,0],                     // .50 chaingun sheild
+    ["OPTRE_Static_M41",35,60,0],                                       // idk .50 but bigger mount?
+    ["OPTRE_Static_AA",35,60,0],                                        // AA mount
+    ["OPTRE_Static_ATGM",45,60,0],                                     //AT static
+    ["OPTRE_Static_Gauss",50,100,0],                                   //Guass static
+    ["OPTRE_Corvette_archer_system",500,500,100]                         // Cruise missle launcher
 ];
 
 buildings = [
@@ -213,82 +234,67 @@ support_vehicles = [
 
 // Light infantry squad.
 blufor_squad_inf_light = [
-    "B_Soldier_TL_F",
-    "B_Soldier_F",
-    "B_Soldier_F",
-    "B_Soldier_LAT_F",
-    "B_Soldier_GL_F",
-    "B_soldier_AR_F",
-    "B_soldier_AR_F",
-    "B_soldier_M_F",
-    "B_medic_F",
-    "B_engineer_F"
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
+	"OPTRE_UNSC_Marine_Soldier_Breacher",
+	"OPTRE_UNSC_Marine_Soldier_Breacher",
+	"OPTRE_UNSC_Marine_Soldier_Grenadier",
+	"OPTRE_UNSC_Marine_Soldier_Corpsman",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
+	"OPTRE_UNSC_Marine_Soldier_TeamLead"
+	
+	
 ];
 
 // Heavy infantry squad.
 blufor_squad_inf = [
-    "B_Soldier_TL_F",
-    "B_Soldier_LAT_F",
-    "B_Soldier_LAT_F",
-    "B_Soldier_GL_F",
-    "B_soldier_AR_F",
-    "B_soldier_AR_F",
-    "B_HeavyGunner_F",
-    "B_Sharpshooter_F",
-    "B_medic_F",
-    "B_engineer_F"
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
+	"OPTRE_UNSC_Marine_Soldier_Assist_Autorifleman",
+	"OPTRE_UNSC_Marine_Soldier_Autorifleman",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
+	"OPTRE_UNSC_Marine_Soldier_Grenadier",
+	"OPTRE_UNSC_Marine_Soldier_Corpsman",
+	"OPTRE_UNSC_Marine_Soldier_Marksman",
+	"OPTRE_UNSC_Marine_Soldier_TeamLead"
+	
 ];
 
 // AT specialists squad.
 blufor_squad_at = [
-    "B_Soldier_TL_F",
-    "B_Soldier_F",
-    "B_Soldier_F",
-    "B_soldier_AT_F",
-    "B_soldier_AT_F",
-    "B_soldier_AT_F",
-    "B_medic_F",
-    "B_soldier_F"
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
+	"OPTRE_UNSC_Marine_Soldier_AT_Specialist",
+	"OPTRE_UNSC_Marine_Soldier_TeamLead"
+	
 ];
 
 // AA specialists squad.
 blufor_squad_aa = [
-    "B_Soldier_TL_F",
-    "B_Soldier_F",
-    "B_Soldier_F",
-    "B_soldier_AA_F",
-    "B_soldier_AA_F",
-    "B_soldier_AA_F",
-    "B_medic_F",
-    "B_soldier_F"
+    "OPTRE_UNSC_Marine_Soldier_AA_Specialist",
+	"OPTRE_UNSC_Marine_Soldier_AA_Specialist"
 ];
 
 // Force recon squad.
 blufor_squad_recon = [
-    "B_recon_TL_F",
-    "B_recon_F",
-    "B_recon_F",
-    "B_recon_LAT_F",
-    "B_recon_M_F",
-    "B_recon_M_F",
-    "B_Recon_Sharpshooter_F",
-    "B_Recon_Sharpshooter_F",
-    "B_recon_medic_F",
-    "B_recon_exp_F"
+    "OPTRE_UNSC_Marine_Soldier_Marksman",
+	"OPTRE_UNSC_Marine_Soldier_Marksman",
+	"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
+	"OPTRE_UNSC_Marine_Soldier_UAV_Op"
+	
 ];
 
 // Paratroopers squad (The units of this squad will automatically get parachutes on build)
 blufor_squad_para = [
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F",
-    "B_soldier_PG_F"
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
+    "OPTRE_UNSC_Marine_Soldier_Breacher",
+    "OPTRE_UNSC_Marine_Soldier_Breacher",
+    "OPTRE_UNSC_Marine_Soldier_Corpsman",
+    "OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
+    "OPTRE_UNSC_Marine_Soldier_TeamLead"
 ];
 
 /*
@@ -297,37 +303,16 @@ blufor_squad_para = [
     Which base locks a vehicle is randomized on the first start of the campaign.
 */
 elite_vehicles = [
-    "rhsusf_mkvsoc",                                                    // Mk.V SOCOM
-    "rhsusf_m1a1aim_tuski_wd",                                          // M1A1SA (Tusk I)
-    "B_MBT_01_TUSK_F",                                                  // M2A4 Slammer UP
-    "rhsusf_m1a2sep1tuskiiwd_usarmy",                                   // M1A2SEPv1 (Tusk II)
-    "BWA3_Leopard2_Fleck",                                              // MBT Leopard 2A6M
-    "B_MBT_01_arty_F",                                                  // M4 Scorcher
-    "rhsusf_m109_usarmy",                                               // M109A6
-    "B_MBT_01_mlrs_F",                                                  // M5 Sandstorm MLRS
-    "B_Heli_Attack_01_dynamicLoadout_F",                                // AH-99 Blackfoot
-    "RHS_AH64D_wd",                                                     // AH-64D (Multi-Role)
-    "BWA3_Tiger_RMK_Universal",                                         // UH Tiger RMK (Universal)
-    "B_UAV_02_dynamicLoadout_F",                                        // MQ-4A Greyhawk
-    "B_T_UAV_03_dynamicLoadout_F",                                      // MQ-12 Falcon
-    "B_UAV_05_F",                                                       // UCAV Sentinel
-    "B_Plane_CAS_01_dynamicLoadout_F",                                  // A-164 Wipeout (CAS)
-    "I_Plane_Fighter_04_F",                                             // A-149 Gryphon
-    "RHS_A10",                                                          // A-10A (CAS)
-    "USAF_MQ9",                                                         // MQ-9 Reaper
-    "USAF_A10",                                                         // A-10C Thunderbolt II
-    "USAF_F22",                                                         // F-22A Raptor
-    "USAF_F22_EWP_AA",                                                  // F-22A Raptor (EWP-AA)
-    "USAF_F22_EWP_AG",                                                  // F-22A Raptor (EWP-AG)
-    "USAF_F22_Heavy",                                                   // F-22A Raptor (Heavy)
-    "USAF_F35A_STEALTH",                                                // F-35A Lightning II
-    "USAF_F35A",                                                        // F-35A Lightning II (Heavy)
-    "FIR_F15C",                                                         // F-15C Eagle
-    "FIR_F15D",                                                         // F-15D Eagle
-    "FIR_F15E",                                                         // F-15E Strike Eagle
-    "JS_JC_FA18E",                                                      // F/A-18 E Super Hornet
-    "JS_JC_FA18F",                                                      // F/A-18 F Super Hornet
-    "B_Plane_Fighter_01_F",                                             // F/A-181 Black Wasp II
-    "B_Plane_Fighter_01_Stealth_F",                                     // F/A-181 Black Wasp II (Stealth)
-    "B_T_VTOL_01_armed_F"                                               // V-44 X Blackfish (Armed)
+    "OPTRE_M12A1_LRV",
+	"OPTRE_M12R_AA",
+	"OPTRE_M12G1_LRV",
+	"LM_OPCAN_AFV102_MC_WDL",
+	"OPTRE_M808B_UNSC",
+	"OPTRE_M850_UNSC",
+	"OPTRE_UNSC_falcon",
+	"LM_OPCAN_D77_U_MC_WDL",
+	"OPTRE_Pelican_armed",
+	"OPTRE_UNSC_Hornet",
+	"OPTRE_Corvette_archer_system"
+	
 ];
