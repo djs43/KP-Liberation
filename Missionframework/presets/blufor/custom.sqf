@@ -67,6 +67,7 @@ infantry_units = [
 
 light_vehicles = [
 	["OPTRE_M274_ATV",0,0,0],											//Mongoose
+	["OPTRE_M914_RV",0,0,0],											//Recovery Warthog
 	["OPTRE_M12_FAV",0,0,0],											//Warthog Unarmed (driver + 3 passenger)
 	["OPTRE_M813_TT",0,0,0],											//Warthog Transport (Driver + 7 passenger)
 	["OPTRE_M12_LRV",0,0,0],											//Warthog MG
