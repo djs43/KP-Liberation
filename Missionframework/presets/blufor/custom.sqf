@@ -181,7 +181,27 @@ buildings = [
     ["Land_Sign_WarningMilitaryVehicles_F",0,0,0],
     ["Land_Razorwire_F",0,0,0],
     ["Land_ClutterCutter_large_F",0,0,0],
-	["Land_ArmoryA_Green",0,0,0]
+	["Land_ArmoryA_Green",0,0,0],
+	["Land_OPTRE_blast_barrier",0,0,0],
+	["Land_OPTRE_milwall_hub",0,0,0],
+	["Land_OPTRE_milwall_corner",0,0,0],
+	["Land_OPTRE_milwall_gate",0,0,0],
+	["Land_OPTRE_milwall_gateXL",0,0,0],
+	["Land_OPTRE_milwall_segment",0,0,0],
+	["Land_OPTRE_mil_antenna_mast",0,0,0],
+	["Land_OPTRE_Monument",0,0,0],
+	["Land_OPTRE_M72_barrier",0,0,0],
+	["Land_OPTRE_M72_barrierBlk",0,0,0],
+	["Land_OPTRE_M72_barrierTan",0,0,0],
+	["Land_OPTRE_M72S_barrier",0,0,0],
+	["Land_OPTRE_M72S_barrierBlk",0,0,0],
+	["Land_OPTRE_M72S_barrierTan",0,0,0],
+	["Land_OPTRE_watchtower_woodland",0,0,0],
+	["Land_OPTRE_watchtower_urban",0,0,0],
+	["Land_OPTRE_watchtower_desert",0,0,0],
+	["Land_OPTRE_hard_tent_woodland",0,0,0],
+	["Land_OPTRE_hard_tent_urban",0,0,0],
+	["Land_OPTRE_hard_tent_desert",0,0,0]
 ];
 
 support_vehicles = [
@@ -224,7 +244,8 @@ support_vehicles = [
     ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd",125,200,75],                   // M977A4 Ammo
     ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Ammo
+    ["B_Slingload_01_Ammo_F",75,200,0],                                  // Huron Ammo
+	["OPTRE_M313_UNSC",0,0,0]											// Elephant
 ];
 
 /*
