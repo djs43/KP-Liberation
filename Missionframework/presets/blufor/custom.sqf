@@ -22,7 +22,7 @@
 */
 FOB_typename = "Land_ArmoryA_Green";                                    // This is the main FOB HQ building.
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
-FOB_truck_typename = "B_Truck_01_box_F";                                // This is the FOB as a vehicle.
+FOB_truck_typename = "OPTRE_m1087_stallion_unsc_box";                                // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "B_Truck_01_medical_F";                        // This is the mobile respawn (and medical) truck.
 huron_typename = "OPTRE_Pelican_unarmed";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
@@ -50,19 +50,18 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-	["OPTRE_UNSC_Marine_Soldier_Breacher",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Rifleman_Light",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Rifleman_AR",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Assist_Autorifleman",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Autorifleman",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Rifleman_AT",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_AT_Specialist",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_AA_Specialist",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Marksman",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Grenadier",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_UAV_Op",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_TeamLead",0,0,0],
-	["OPTRE_UNSC_Marine_Soldier_Corpsman",0,0,0]
+	["LM_OPCAN_UNSCMC_SL_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_TL_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Rifleman_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Rifleman_AT_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Engineer_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_GL_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Breacher_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Marksman_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_AutoRifleman_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Sniper_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Crewman_WDL",0,0,0],
+	["LM_OPCAN_UNSCMC_Medic_WDL",0,0,0]
 ];
 
 light_vehicles = [
@@ -271,53 +270,56 @@ support_vehicles = [
 
 // Light infantry squad.
 blufor_squad_inf_light = [
-    "OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_Light",
-	"OPTRE_UNSC_Marine_Soldier_Breacher",
-	"OPTRE_UNSC_Marine_Soldier_Breacher",
-	"OPTRE_UNSC_Marine_Soldier_Grenadier",
-	"OPTRE_UNSC_Marine_Soldier_Corpsman",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
-	"OPTRE_UNSC_Marine_Soldier_TeamLead"
+    "LM_OPCAN_UNSCMC_SL_WDL",
+	"LM_OPCAN_UNSCMC_RTO_WDL",
+	"LM_OPCAN_UNSCMC_TL_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_WDL",
+	"LM_OPCAN_UNSCMC_TL_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_WDL",
+	"LM_OPCAN_UNSCMC_Medic_WDL"
 	
 	
 ];
 
 // Heavy infantry squad.
 blufor_squad_inf = [
-    "OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
-	"OPTRE_UNSC_Marine_Soldier_Assist_Autorifleman",
-	"OPTRE_UNSC_Marine_Soldier_Autorifleman",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
-	"OPTRE_UNSC_Marine_Soldier_Grenadier",
-	"OPTRE_UNSC_Marine_Soldier_Corpsman",
-	"OPTRE_UNSC_Marine_Soldier_Marksman",
-	"OPTRE_UNSC_Marine_Soldier_TeamLead"
+    "LM_OPCAN_UNSCMC_SL_WDL",
+	"LM_OPCAN_UNSCMC_RTO_WDL",
+	"LM_OPCAN_UNSCMC_TL_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_WDL",
+	"LM_OPCAN_UNSCMC_GL_WDL",
+	"LM_OPCAN_UNSCMC_AutoRifleman_WDL",
+	"LM_OPCAN_UNSCMC_TL_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_WDL",
+	"LM_OPCAN_UNSCMC_AutoRifleman_WDL",
+	"LM_OPCAN_UNSCMC_Marksman_WDL",
+	"LM_OPCAN_UNSCMC_Medic_WDL"
 	
 ];
 
 // AT specialists squad.
 blufor_squad_at = [
-    "OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_AT",
-	"OPTRE_UNSC_Marine_Soldier_AT_Specialist",
-	"OPTRE_UNSC_Marine_Soldier_TeamLead"
+    "LM_OPCAN_UNSCMC_SL_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_AT_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_AT_WDL",
+	"LM_OPCAN_UNSCMC_Engineer_WDL"
 	
 ];
 
 // AA specialists squad.
 blufor_squad_aa = [
-    "OPTRE_UNSC_Marine_Soldier_AA_Specialist",
-	"OPTRE_UNSC_Marine_Soldier_AA_Specialist"
+    "LM_OPCAN_UNSCMC_TL_WDL",
+	"LM_OPCAN_UNSCMC_Rifleman_AT_WDL"
 ];
 
 // Force recon squad.
 blufor_squad_recon = [
-    "OPTRE_UNSC_Marine_Soldier_Marksman",
-	"OPTRE_UNSC_Marine_Soldier_Marksman",
-	"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
-	"OPTRE_UNSC_Marine_Soldier_UAV_Op"
+    "LM_OPCAN_UNSCMC_Marksman_WDL",
+	"LM_OPCAN_UNSCMC_Marksman_WDL",
+	"LM_OPCAN_UNSCMC_Sniper_WDL",
+	"LM_OPCAN_UNSCMC_RTO_WDL"
 	
 ];
 
