@@ -22,19 +22,19 @@
 */
 FOB_typename = "Land_ArmoryA_Green";                                    // This is the main FOB HQ building.
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
-FOB_truck_typename = "OPTRE_m1087_stallion_unsc_box";                                // This is the FOB as a vehicle.
+FOB_truck_typename = "OPTRE_m1087_stallion_unsc_box";                    // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "B_Truck_01_medical_F";                        // This is the mobile respawn (and medical) truck.
-huron_typename = "OPTRE_Pelican_unarmed";                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
-crewman_classname = "OPTRE_UNSC_Marine_Soldier_Crewman";                                         // This defines the crew for vehicles.
-pilot_classname = "OPTRE_UNSC_Marine_Pilot";                                      // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "OPTRE_UNSC_falcon_unarmed";              // These are the little birds which spawn on the Freedom or at Chimera base.
+Respawn_truck_typename = "OPTRE_m1087_stallion_unsc_medical";            // This is the mobile respawn (and medical) truck.
+huron_typename = "OPTRE_Pelican_unarmed";                      			 // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+crewman_classname = "LM_OPCAN_UNSCMC_Crewman_WDL";                     // This defines the crew for vehicles.
+pilot_classname = "LM_OPCAN_UNSCMC_Crewman_WDL";                        // This defines the pilot for helicopters.
+KP_liberation_little_bird_classname = "OPTRE_UNSC_falcon_unarmed";    // These are the little birds which spawn on the Freedom or at Chimera base.
 KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
-KP_liberation_truck_classname = "B_Truck_01_transport_F";               // These are the trucks which are used in the logistic convoy system.
+KP_liberation_truck_classname = "OPTRE_m1087_stallion_unsc";             // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources.
 KP_liberation_recycle_building = "Land_RepairDepot_01_tan_F";           // The building defined to unlock FOB recycling functionality.
-KP_liberation_air_vehicle_building = "B_Radar_System_01_F";             // The building defined to unlock FOB air vehicle functionality.
+KP_liberation_air_vehicle_building = "Land_Radar_Small_F";             // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
 KP_liberation_supply_crate = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
@@ -50,57 +50,55 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-	["LM_OPCAN_UNSCMC_SL_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_TL_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Rifleman_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Rifleman_AT_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Engineer_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_GL_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Breacher_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Marksman_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_AutoRifleman_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Sniper_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Crewman_WDL",0,0,0],
-	["LM_OPCAN_UNSCMC_Medic_WDL",0,0,0]
+	["LM_OPCAN_UNSCMC_SL_WDL",20,0,0],
+	["LM_OPCAN_UNSCMC_TL_WDL",15,0,0],
+	["LM_OPCAN_UNSCMC_Rifleman_WDL",15,0,0],
+	["LM_OPCAN_UNSCMC_Rifleman_AT_WDL",30,5,0],
+	["LM_OPCAN_UNSCMC_Engineer_WDL",30,0,0],
+	["LM_OPCAN_UNSCMC_GL_WDL",25,0,0],
+	["LM_OPCAN_UNSCMC_Breacher_WDL",15,0,0],
+	["LM_OPCAN_UNSCMC_Marksman_WDL",30,0,0],
+	["LM_OPCAN_UNSCMC_AutoRifleman_WDL",25,0,0],
+	["LM_OPCAN_UNSCMC_Sniper_WDL",70,5,0],
+	["LM_OPCAN_UNSCMC_Crewman_WDL",10,0,0],
+	["LM_OPCAN_UNSCMC_Medic_WDL",30,0,0]
 ];
 
 light_vehicles = [
-	["OPTRE_M274_ATV",0,0,0],											//Mongoose
-	["LM_OPCAN_HOG_RC_MC_WDL",0,0,0],									//Recovery Warthog
-	["LM_OPCAN_HOG_RC_AR_DES",0,0,0],									//Recovery Warthog Desert
-	["OPTRE_m1087_stallion_unsc_box",0,0,0],							//Stallion Container Transport
-	["LM_OPCAN_HOG_U_MC_WDL",0,0,0],									//Warthog Unarmed (driver + 3 passenger)
-	["LM_OPCAN_HOG_U_AR_DES",0,0,0],									//Warthog Unarmed (driver + 3 passenger) Desert
-	["LM_OPCAN_HOG_TT_MC_WDL",0,0,0],									//Warthog Transport (Driver + 7 passenger)
-	["LM_OPCAN_HOG_TT_AR_DES",0,0,0],									//Warthog Transport (Driver + 7 passenger) Desert
-	["LM_OPCAN_HOG_MG_MC_WDL",0,0,0],									//Warthog MG
-	["LM_OPCAN_HOG_MG_AR_DES",0,0,0],									//Warthog MG Desert
-	["LM_OPCAN_HOG_AT_MC_WDL",0,0,0],									//Warthog Rocket
-	["LM_OPCAN_HOG_AT_AR_DES",0,0,0],									//Warthog Rocket Desert
-	["LM_OPCAN_HOG_AA_MC_WDL",0,0,0],									//Warthog AA
-	["LM_OPCAN_HOG_AA_AR_DES",0,0,0],									//Warthog AA Desert
-	["LM_OPCAN_HOG_G_MC_WDL",0,0,0],									//Warthog Guass
-	["LM_OPCAN_HOG_G_AR_DES",0,0,0],									//Warthog Guass Desert
-	["LM_OPCAN_AFV102_MC_U_WDL",0,0,0],									//Unarmed Hound APC
-	["LM_OPCAN_AFV102_MC_WDL",0,0,0]									//Armed Hound APC
-	
+	["OPTRE_M274_ATV",50,0,25],											//Mongoose
+	["LM_OPCAN_HOG_RC_MC_WDL",100,0,50],								//Recovery Warthog
+	["LM_OPCAN_HOG_RC_AR_DES",100,0,50],								//Recovery Warthog Desert
+	["OPTRE_m1087_stallion_unsc_box",125,0,75],							//Stallion Container Transport
+	["LM_OPCAN_HOG_U_MC_WDL",125,0,75],									//Warthog Unarmed (driver + 3 passenger)
+	["LM_OPCAN_HOG_U_AR_DES",125,0,75],									//Warthog Unarmed (driver + 3 passenger) Desert
+	["LM_OPCAN_HOG_TT_MC_WDL",150,0,75],								//Warthog Transport (Driver + 7 passenger)
+	["LM_OPCAN_HOG_TT_AR_DES",150,0,75],								//Warthog Transport (Driver + 7 passenger) Desert
+	["LM_OPCAN_HOG_MG_MC_WDL",150,40,75],								//Warthog MG
+	["LM_OPCAN_HOG_MG_AR_DES",150,40,75],								//Warthog MG Desert
+	["LM_OPCAN_HOG_AT_MC_WDL",150,60,75],								//Warthog Rocket
+	["LM_OPCAN_HOG_AT_AR_DES",150,60,75],								//Warthog Rocket Desert
+	["LM_OPCAN_HOG_AA_MC_WDL",150,80,75],								//Warthog AA
+	["LM_OPCAN_HOG_AA_AR_DES",150,80,75],								//Warthog AA Desert
+	["LM_OPCAN_HOG_G_MC_WDL",150,100,75],								//Warthog Guass
+	["LM_OPCAN_HOG_G_AR_DES",150,100,75]								//Warthog Guass Desert	
 ];
 
 heavy_vehicles = [
-	["LM_OPCAN_MGS_MC_WDL",0,0,0],										//Timberwolf
-	["OPTRE_M808B_UNSC",0,0,0],											//Scorpion
-	["OPTRE_M850_UNSC",0,0,0],											//Grizzly
-	["OPTRE_M313_UNSC",0,0,0]											//Elephant
+	["LM_OPCAN_AFV102_MC_U_WDL",200,0,100],								//Unarmed Hound APC
+	["LM_OPCAN_AFV102_MC_WDL",200,100,100],								//Armed Hound APC
+	["LM_OPCAN_MGS_MC_WDL",200,200,100],								//Timberwolf
+	["OPTRE_M808B_UNSC",400,350,225],									//Scorpion
+	["OPTRE_M850_UNSC",600,700,275]										//Grizzly
 ];
 
 air_vehicles = [
-	["LM_OPCAN_UH144_MC",0,0,0],										//Falcon unarmed (pilot + 7 yeats)
-	["LM_OPCAN_UH144A_MC",0,0,0],										//Falcon Armed
-	["LM_OPCAN_D77_U_MC_CGC",0,0,0],									//Pelican Unarmed (pilot + copilot + 12 seats)
-	["LM_OPCAN_D77_A_MC_CGC",0,0,0],									//Pelican Armed (pilot + copilot + 12 seats)
-	["LM_OPCAN_AV14_MC",0,0,0],											//Hornet
-	["OPTRE_AV22A_Sparrowhawk",0,0,0],									//Laser Sparrow
-	["OPTRE_AV22C_Sparrowhawk",0,0,0]									//Cannon Sparrow
+	["LM_OPCAN_UH144_MC",250,0,150],									//Falcon unarmed (pilot + 7 yeats)
+	["LM_OPCAN_UH144A_MC",250,100,150],									//Falcon Armed
+	["LM_OPCAN_D77_U_MC_CGC",750,0,750],								//Pelican Unarmed (pilot + copilot + 12 seats)
+	["LM_OPCAN_D77_A_MC_CGC",750,500,750],								//Pelican Armed (pilot + copilot + 12 seats)
+	["LM_OPCAN_AV14_MC",500,500,250],									//Hornet
+	["OPTRE_AV22A_Sparrowhawk",1000,2000,500],							//Laser Sparrow
+	["OPTRE_AV22C_Sparrowhawk",1000,1500,500]							//Cannon Sparrow
 ];
 
 static_vehicles = [
@@ -111,6 +109,9 @@ static_vehicles = [
     ["OPTRE_Static_AA",35,60,0],                                        // AA mount
     ["OPTRE_Static_ATGM",45,60,0],                                     //AT static
     ["OPTRE_Static_Gauss",50,100,0],                                   //Guass static
+	["B_Radar_System_01_F",250,0,0], 										//Radar Trailer
+	["TK_GUE_WarfareBUAVterminal_Base_EP1",300,0,0],
+	["B_SAM_System_03_F",250,500,0], 										//Patriot Trailer
     ["OPTRE_Corvette_archer_system",500,500,100]                         // Cruise missle launcher
 ];
 
@@ -118,11 +119,6 @@ buildings = [
     ["Land_Cargo_House_V1_F",0,0,0],
     ["Land_Cargo_Patrol_V1_F",0,0,0],
     ["Land_Cargo_Tower_V1_F",0,0,0],
-    ["Flag_NATO_F",0,0,0],
-    ["Flag_US_F",0,0,0],
-    ["BWA3_Flag_Ger_F",0,0,0],
-    ["Flag_UK_F",0,0,0],
-    ["Flag_White_F",0,0,0],
     ["Land_Medevac_house_V1_F",0,0,0],
     ["Land_Medevac_HQ_V1_F",0,0,0],
     ["Flag_RedCrystal_F",0,0,0],
@@ -258,8 +254,8 @@ support_vehicles = [
     ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
     ["B_Slingload_01_Ammo_F",75,200,0],                                  // Huron Ammo
-	["OPTRE_M313_UNSC",0,0,0],											// Elephant
-	["OPTRE_cart",0,0,0]
+	["OPTRE_M313_UNSC",400,400,400],									// Elephant
+	["OPTRE_cart",50,0,25]
 ];
 
 /*
@@ -288,7 +284,6 @@ blufor_squad_inf = [
     "LM_OPCAN_UNSCMC_SL_WDL",
 	"LM_OPCAN_UNSCMC_RTO_WDL",
 	"LM_OPCAN_UNSCMC_TL_WDL",
-	"LM_OPCAN_UNSCMC_Rifleman_WDL",
 	"LM_OPCAN_UNSCMC_GL_WDL",
 	"LM_OPCAN_UNSCMC_AutoRifleman_WDL",
 	"LM_OPCAN_UNSCMC_TL_WDL",
