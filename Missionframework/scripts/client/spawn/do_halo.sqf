@@ -36,29 +36,19 @@ if ( dialog ) then {
 if ( dojump > 0 ) then {
     GRLIB_last_halo_jump = time;
     halo_position = halo_position getPos [random 250, random 360];
-    halo_position = [ halo_position select 0, halo_position select 1, GRLIB_halo_altitude + (random 200) ];
+    halo_position = [ halo_position select 0, halo_position select 1, 1000 ]; //GRLIB_halo_altitude + (random 200)
     halojumping = true;
-    sleep 0.1;
-    cutRsc ["fasttravel", "PLAIN", 1];
+    //sleep 0.1;
+    //cutRsc ["fasttravel", "PLAIN", 1];
     playSound "parasound";
-    sleep 2;
-    _backpack = backpack player;
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
-        _backpackcontents = backpackItems player;
-        removeBackpack player;
-        sleep 0.1;
-    };
-    player addBackpack "B_Parachute";
-
-    player setpos halo_position;
-
+    sleep 1;
+    
+	_veh = "OPTRE_HEV" createVehicle halo_position;		//OPTRE_HEV
+    _veh setpos halo_position;					
+	player moveInAny _veh;
+	
     sleep 4;
     halojumping = false;
-    waitUntil { !alive player || isTouchingGround player };
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
-        sleep 2;
-        player addBackpack _backpack;
-        clearAllItemsFromBackpack player;
-        { player addItemToBackpack _x } foreach _backpackcontents;
-    };
+    //waitUntil { !alive player || isTouchingGround player };
+    
 };
