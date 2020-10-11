@@ -157,13 +157,13 @@ GRLIB_arsenal_magazines = [
 	"OPAEX_1Rnd_SmokeBlue_Grenade_shell",
 	"OPAEX_3Rnd_SmokeBlue_Grenade_shell",
 	"OPAEX_1Rnd_SmokeOrange_Grenade_shell",
-	"OPAEX_3Rnd_SmokeOrange_Grenade_shell"
+	"OPAEX_3Rnd_SmokeOrange_Grenade_shell",
 	
 	// Grenades
 	"ACE_M14","Chemlight_blue","Chemlight_green","ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiWhite","ACE_Chemlight_HiYellow","ACE_Chemlight_IR","ACE_Chemlight_Orange","Chemlight_red","ACE_Chemlight_UltraHiOrange","Chemlight_yellow","ACE_Chemlight_White","ACE_CTS9","B_IR_Grenade","ACE_HandFlare_Green","ACE_HandFlare_Red","ACE_HandFlare_White","ACE_HandFlare_Yellow","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","OPTRE_M2_Smoke_Blue","SmokeShellYellow","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Purple","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Yellow","HandGrenade","OPTRE_M8_Flare_Blue","OPTRE_M8_Flare_Green","OPTRE_M8_Flare","OPTRE_M8_Flare_White","OPTRE_M8_Flare_Yellow","SmokeShell","ACE_M84","OPTRE_M9_Frag","OPTRE_FC_PlasmaGrenade","MiniGrenade",
 	
 	// Explosives-Mines
-	"C7_Remote_Mag","C12_Remote_Mag","OPTRE_FC_BubbleShield","DemoCharge_Remote_Mag","ATMine_Range_Mag","UNSCMine_Range_Mag","M168_Remote_Mag","SatchelCharge_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSBoundingMine_Range_Mag","M41_IED_Remote_Mag","M41_IED_B_Remote_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","IEDLandSmall_Remote_Mag","IEDUrbanSmall_Remote_Mag","TrainingMine_Mag","ACE_FlareTripMine_Mag","APERSMine_Range_Mag",
+	"C7_Remote_Mag","C12_Remote_Mag","OPTRE_FC_BubbleShield","DemoCharge_Remote_Mag","ATMine_Range_Mag","UNSCMine_Range_Mag","M168_Remote_Mag","SatchelCharge_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSBoundingMine_Range_Mag","M41_IED_Remote_Mag","M41_IED_B_Remote_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","IEDLandSmall_Remote_Mag","IEDUrbanSmall_Remote_Mag","TrainingMine_Mag","ACE_FlareTripMine_Mag","APERSMine_Range_Mag"
 
 ];
 
@@ -238,7 +238,7 @@ GRLIB_arsenal_items = [
 	"OPTRE_Smartfinder","Rangefinder","ACE_Vector","OPTRE_Binoculars",
     
     // ACE-Other Items
-	"ACE_RangeTable_82mm","ACE_adenosine","ACE_artilleryTable","ACE_ATragMX","ACE_Banana","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","OPTRE_Biofoam","ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","ACE_bodyBag","ACE_CableTie","ACE_Cellphone","ACE_Chemlight_Shield","ACE_DAGR","ACE_DeadManSwitch","ACE_DefusalKit","ACE_EarPlugs","ACE_EntrenchingTool","ACE_epinephrine","FirstAidKit","ACE_Flashlight_MX991","ACE_HuntIR_monitor","ACE_IR_Strobe_Item","ACE_Kestrel4500","ACE_Flashlight_KSF1","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools","OPTRE_MedKit","Medikit","ACE_microDAGR","MineDetector","ACE_morphine","OPTRE_Medigel","ACE_personalAidKit","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_RangeCard","ACE_rope12","ACE_rope15","ACE_rope18","ACE_rope27","ACE_rope36","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","ACE_Sandbag_empty","ACE_splint","ACE_SpottingScope","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_Tripod","ACE_surgicalKit","ToolKit","ACE_tourniquet","ACE_UAVBattery","ACE_wirecutter"]
+	"ACE_RangeTable_82mm","ACE_adenosine","ACE_artilleryTable","ACE_ATragMX","ACE_Banana","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","OPTRE_Biofoam","ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","ACE_bodyBag","ACE_CableTie","ACE_Cellphone","ACE_Chemlight_Shield","ACE_DAGR","ACE_DeadManSwitch","ACE_DefusalKit","ACE_EarPlugs","ACE_EntrenchingTool","ACE_epinephrine","FirstAidKit","ACE_Flashlight_MX991","ACE_HuntIR_monitor","ACE_IR_Strobe_Item","ACE_Kestrel4500","ACE_Flashlight_KSF1","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools","OPTRE_MedKit","Medikit","ACE_microDAGR","MineDetector","ACE_morphine","OPTRE_Medigel","ACE_personalAidKit","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_RangeCard","ACE_rope12","ACE_rope15","ACE_rope18","ACE_rope27","ACE_rope36","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","ACE_Sandbag_empty","ACE_splint","ACE_SpottingScope","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_Tripod","ACE_surgicalKit","ToolKit","ACE_tourniquet","ACE_UAVBattery","ACE_wirecutter",
 
     //TFAR Items
     "tf_anprc148jem",                                               // AN/PRC-148 JEM
