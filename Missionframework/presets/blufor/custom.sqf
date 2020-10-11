@@ -67,13 +67,21 @@ infantry_units = [
 
 light_vehicles = [
 	["OPTRE_M274_ATV",0,0,0],											//Mongoose
-	["OPTRE_M914_RV",0,0,0],											//Recovery Warthog
-	["OPTRE_M12_FAV",0,0,0],											//Warthog Unarmed (driver + 3 passenger)
-	["OPTRE_M813_TT",0,0,0],											//Warthog Transport (Driver + 7 passenger)
-	["OPTRE_M12_LRV",0,0,0],											//Warthog MG
-	["OPTRE_M12A1_LRV",0,0,0],											//Warthog Rocket
-	["OPTRE_M12R_AA",0,0,0],											//Warthog AA
-	["OPTRE_M12G1_LRV",0,0,0],											//Warthog Guass
+	["LM_OPCAN_HOG_RC_MC_WDL",0,0,0],									//Recovery Warthog
+	["LM_OPCAN_HOG_RC_AR_DES",0,0,0],									//Recovery Warthog Desert
+	["OPTRE_m1087_stallion_unsc_box",0,0,0],							//Stallion Container Transport
+	["LM_OPCAN_HOG_U_MC_WDL",0,0,0],									//Warthog Unarmed (driver + 3 passenger)
+	["LM_OPCAN_HOG_U_AR_DES",0,0,0],									//Warthog Unarmed (driver + 3 passenger) Desert
+	["LM_OPCAN_HOG_TT_MC_WDL",0,0,0],									//Warthog Transport (Driver + 7 passenger)
+	["LM_OPCAN_HOG_TT_AR_DES",0,0,0],									//Warthog Transport (Driver + 7 passenger) Desert
+	["LM_OPCAN_HOG_MG_MC_WDL",0,0,0],									//Warthog MG
+	["LM_OPCAN_HOG_MG_AR_DES",0,0,0],									//Warthog MG Desert
+	["LM_OPCAN_HOG_AT_MC_WDL",0,0,0],									//Warthog Rocket
+	["LM_OPCAN_HOG_AT_AR_DES",0,0,0],									//Warthog Rocket Desert
+	["LM_OPCAN_HOG_AA_MC_WDL",0,0,0],									//Warthog AA
+	["LM_OPCAN_HOG_AA_AR_DES",0,0,0],									//Warthog AA Desert
+	["LM_OPCAN_HOG_G_MC_WDL",0,0,0],									//Warthog Guass
+	["LM_OPCAN_HOG_G_AR_DES",0,0,0],									//Warthog Guass Desert
 	["LM_OPCAN_AFV102_MC_U_WDL",0,0,0],									//Unarmed Hound APC
 	["LM_OPCAN_AFV102_MC_WDL",0,0,0]									//Armed Hound APC
 	
@@ -81,17 +89,19 @@ light_vehicles = [
 
 heavy_vehicles = [
 	["LM_OPCAN_MGS_MC_WDL",0,0,0],										//Timberwolf
-	["OPTRE_M808B_UNSC",0,0,0],											// Scorpion
+	["OPTRE_M808B_UNSC",0,0,0],											//Scorpion
 	["OPTRE_M850_UNSC",0,0,0],											//Grizzly
 	["OPTRE_M313_UNSC",0,0,0]											//Elephant
 ];
 
 air_vehicles = [
-	["OPTRE_UNSC_falcon_unarmed",0,0,0],								//Falcon unarmed (pilot + 7 yeats)
-	["OPTRE_UNSC_falcon",0,0,0],										//Falcon Armed
-	["LM_OPCAN_D77_U_MC_WDL",0,0,0],									//Pelican Unarmed (pilot + copilot + 12 seats)
-	["LM_OPCAN_D77_A_MC_WDL",0,0,0],									//Pelican Armed (pilot + copilot + 12 seats)
-	["OPTRE_UNSC_Hornet",0,0,0]											//Hornet
+	["LM_OPCAN_UH144_MC",0,0,0],										//Falcon unarmed (pilot + 7 yeats)
+	["LM_OPCAN_UH144A_MC",0,0,0],										//Falcon Armed
+	["LM_OPCAN_D77_U_MC_CGC",0,0,0],									//Pelican Unarmed (pilot + copilot + 12 seats)
+	["LM_OPCAN_D77_A_MC_CGC",0,0,0],									//Pelican Armed (pilot + copilot + 12 seats)
+	["LM_OPCAN_AV14_MC",0,0,0],											//Hornet
+	["OPTRE_AV22A_Sparrowhawk",0,0,0],									//Laser Sparrow
+	["OPTRE_AV22C_Sparrowhawk",0,0,0]									//Cannon Sparrow
 ];
 
 static_vehicles = [
@@ -335,10 +345,11 @@ elite_vehicles = [
 	"LM_OPCAN_AFV102_MC_WDL",
 	"OPTRE_M808B_UNSC",
 	"OPTRE_M850_UNSC",
-	"OPTRE_UNSC_falcon",
+	"LM_OPCAN_UH144A_CGC",
 	"LM_OPCAN_D77_A_MC_WDL",
-	"OPTRE_Pelican_armed",
-	"OPTRE_UNSC_Hornet",
+	"LM_OPCAN_AV14_MC",
+	"OPTRE_AV22A_Sparrowhawk",
+	"OPTRE_AV22C_Sparrowhawk",
 	"OPTRE_Corvette_archer_system"
 	
 ];
