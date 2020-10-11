@@ -74,12 +74,13 @@ light_vehicles = [
 	["OPTRE_M12A1_LRV",0,0,0],											//Warthog Rocket
 	["OPTRE_M12R_AA",0,0,0],											//Warthog AA
 	["OPTRE_M12G1_LRV",0,0,0],											//Warthog Guass
-	["LM_OPCAN_AFV102_MC_U_WDL",0,0,0],									//Unarmed NATO APC
-	["LM_OPCAN_AFV102_MC_WDL",0,0,0]									//Armed Nato APC
+	["LM_OPCAN_AFV102_MC_U_WDL",0,0,0],									//Unarmed Hound APC
+	["LM_OPCAN_AFV102_MC_WDL",0,0,0]									//Armed Hound APC
 	
 ];
 
 heavy_vehicles = [
+	["LM_OPCAN_MGS_MC_WDL",0,0,0],										//Timberwolf
 	["OPTRE_M808B_UNSC",0,0,0],											// Scorpion
 	["OPTRE_M850_UNSC",0,0,0],											//Grizzly
 	["OPTRE_M313_UNSC",0,0,0]											//Elephant
@@ -89,7 +90,7 @@ air_vehicles = [
 	["OPTRE_UNSC_falcon_unarmed",0,0,0],								//Falcon unarmed (pilot + 7 yeats)
 	["OPTRE_UNSC_falcon",0,0,0],										//Falcon Armed
 	["LM_OPCAN_D77_U_MC_WDL",0,0,0],									//Pelican Unarmed (pilot + copilot + 12 seats)
-	["OPTRE_Pelican_armed",0,0,0],										//Pelican Armed
+	["LM_OPCAN_D77_A_MC_WDL",0,0,0],									//Pelican Armed (pilot + copilot + 12 seats)
 	["OPTRE_UNSC_Hornet",0,0,0]											//Hornet
 ];
 
@@ -201,7 +202,10 @@ buildings = [
 	["Land_OPTRE_watchtower_desert",0,0,0],
 	["Land_OPTRE_hard_tent_woodland",0,0,0],
 	["Land_OPTRE_hard_tent_urban",0,0,0],
-	["Land_OPTRE_hard_tent_desert",0,0,0]
+	["Land_OPTRE_hard_tent_desert",0,0,0],
+	["Land_OPTRE_medical_tent_grn",0,0,0],
+	["Land_OPTRE_medical_tent_tan",0,0,0],
+	["Land_OPTRE_medical_tent_gry",0,0,0]
 ];
 
 support_vehicles = [
@@ -332,7 +336,7 @@ elite_vehicles = [
 	"OPTRE_M808B_UNSC",
 	"OPTRE_M850_UNSC",
 	"OPTRE_UNSC_falcon",
-	"LM_OPCAN_D77_U_MC_WDL",
+	"LM_OPCAN_D77_A_MC_WDL",
 	"OPTRE_Pelican_armed",
 	"OPTRE_UNSC_Hornet",
 	"OPTRE_Corvette_archer_system"
