@@ -37,7 +37,7 @@ opfor_fuel_truck = "O_Truck_03_fuel_F";                                 // Tempe
 opfor_ammo_truck = "O_Truck_03_ammo_F";                                 // Tempest Ammo
 opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";             // Taru Fuel Pod
 opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";             // Taru Ammo Pod
-opfor_flag = "Flag_CSAT_F";                                             // Flag
+opfor_flag = "OPTRE_CTF_Flag_RedINS";                                             // Flag
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
 Therefore, adding the same value twice or three times means they are more likely to be chosen more often. */
@@ -74,7 +74,10 @@ opfor_vehicles = [
     "OPTRE_M12R_AA_ins",                                            
     "LM_OPCAN_Fox_SU",                                         
     "LM_OPCAN_Fox_SU",                                                
-    "LM_OPCAN_MGS_SU",                                                
+    "LM_OPCAN_MGS_SU",
+	"OPTRE_Static_M41_Ins",
+	"OPTRE_Ins_URF_Rifleman_AR",
+	"OPTRE_Static_FG75",
     "LM_OPCAN_M350_INS_WDL",                                                
     "LM_OPCAN_M350_INS_WDL"                                                
 ];
@@ -124,7 +127,8 @@ If something in this array can't hold all 8 soldiers then buggy behaviours may o
 opfor_troup_transports = [
     "OPTRE_m1015_mule_ins",                                           // Tempest Transport
     "OPTRE_M12_FAV_APC",                                             // Tempest Transport (Covered)
-    "LM_OPCAN_Fox_SU",                                      // Mi-290 Taru (Bench)
+    "LM_OPCAN_Fox_SU",  
+	"OPTRE_Pelican_unarmed_ins",
     "OPTRE_Pelican_armed_ins"                                  // Po-30 Orca (Armed)
 ];
 
