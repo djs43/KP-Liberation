@@ -51,7 +51,7 @@ KP_liberation_medical_vehicles = [
     "uns_ch47a_medevac",
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
-    "uns_uh1D_med"
+    "uns_uh1D_med",
 	"OPTRE_M313_UNSC"
 ];
 
@@ -278,7 +278,8 @@ KP_liberation_suppMod_whitelist = [
 /* Array of radio tower classnames to place at radio tower sectors.
 If more than one is added, it'll be selected random for each sector on campaign start. */
 KPLIB_radioTowerClassnames = [
-    "Land_Communication_F"
+    "Land_Communication_F",
+	"Land_OPTRE_mil_antenna_mast"
 ];
 
 /* - Default arsenal blacklist method.
@@ -719,6 +720,7 @@ KPLIB_transportConfigs = [
 /* Various other settings.
 Everything the AI troups should be able to resupply from. */
 KPLIB_aiResupplySources = [
+	"OPTRE_M313_UNSC", //Elephant
     "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Ammo_F",
     "B_T_APC_Tracked_01_CRV_F",
