@@ -261,12 +261,8 @@ KP_liberation_battlegroup_clearance = [
 The Steam UIDs entered in this array will allow corresponding players to access the commander actions (rights, production, etc.),
 even if they are not in the commander slot. */
 KP_liberation_commander_actions = [
-    /*
-    Example:
-    "1324678",
-    "5468711",
-    "2156347"
-    */
+    "76561198212369783",			//Dan
+	"76561198043859702"				//McCann
 ];
 
 /* Whitelist for BI support framework access.
