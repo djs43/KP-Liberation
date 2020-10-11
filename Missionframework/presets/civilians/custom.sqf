@@ -47,5 +47,7 @@ civilian_vehicles = [
     "C_Truck_02_fuel_F",
     "C_Truck_02_transport_F",
     "C_Truck_02_covered_F",
-    "C_Truck_02_box_F"
+    "C_Truck_02_box_F",
+	"OPTRE_Genet",
+	"OPTRE_M12_CIV"
 ];
