@@ -259,7 +259,8 @@ support_vehicles = [
     ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
     ["B_Slingload_01_Ammo_F",75,200,0],                                  // Huron Ammo
-	["OPTRE_M313_UNSC",0,0,0]											// Elephant
+	["OPTRE_M313_UNSC",0,0,0],											// Elephant
+	["OPTRE_cart",0,0,0]
 ];
 
 /*
