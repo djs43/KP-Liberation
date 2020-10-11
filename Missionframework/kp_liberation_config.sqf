@@ -64,7 +64,10 @@ KP_liberation_medical_facilities = [
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
-    "US_Tent_MASH"
+    "US_Tent_MASH",
+	"Land_OPTRE_medical_tent_grn",
+	"Land_OPTRE_medical_tent_tan",
+	"Land_OPTRE_medical_tent_gry"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -1037,7 +1040,8 @@ KP_liberation_suppMod_artyVeh = [
     "uns_M2_60mm_mortar_pvp",
     "uns_M2_60mm_mortar",
     "uns_M30_107mm_mortar",
-    "uns_Type55_mortar"
+    "uns_Type55_mortar",
+	"OPTRE_Corvette_archer_system"
 ];
 
 // Objects which are spawned as intel objects for pickup
