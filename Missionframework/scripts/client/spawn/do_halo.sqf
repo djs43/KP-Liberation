@@ -38,17 +38,27 @@ if ( dojump > 0 ) then {
     halo_position = halo_position getPos [random 250, random 360];
     halo_position = [ halo_position select 0, halo_position select 1, 1000 ]; //GRLIB_halo_altitude + (random 200)
     halojumping = true;
-    //sleep 0.1;
-    //cutRsc ["fasttravel", "PLAIN", 1];
+    sleep 0.1;
+    cutRsc ["fasttravel", "PLAIN", 1];
     playSound "parasound";
     sleep 1;
     
-	_veh = "OPTRE_HEV" createVehicle halo_position;		//OPTRE_HEV
-    _veh setpos halo_position;					
-	player moveInAny _veh;
-	
+	_veh = "OPTRE_HEV" createVehicle halo_position;						//creates drop pod
+    _veh setpos halo_position;											//moves drop pod to halo marker and height
+	player moveInAny _veh;												//moves player inside drop pod
+	addCamShake [5, 60, 25];											//Adds 60 sec of camera shake
     sleep 4;
     halojumping = false;
+	
+	waitUntil { isTouchingGround _veh };								//Suspends execution until vehicle is touching ground
+	p = getPos _veh; 													
+	a = "Sh_105mm_HEAT_MP" createVehicle p; 							
+	a setVelocity [0, 0, -100];											//get pos of drop pod, creates a shell going downwards at the base of pod to simulate impact
+	sleep 1;
+	resetCamShake; 														//Stops camera shake
+	_veh animateSource ["Doors", 1];									//Opens doors
+	
+	
     //waitUntil { !alive player || isTouchingGround player };
     
 };
