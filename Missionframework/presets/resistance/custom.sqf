@@ -67,7 +67,7 @@ KP_liberation_guerilla_weapons_3 = [
 KP_liberation_guerilla_uniforms_1 = [
     "LM_OPCAN_CPD_Uni_Base",
 	"LM_OPCAN_CPD_Uni_Base_2",
-	"LM_OPCAN_CPD_Uni_Base_2",
+	"LM_OPCAN_CPD_Uni_Base_2"
 	
 ];
 
