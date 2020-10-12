@@ -35,7 +35,7 @@ if ( dialog ) then {
 
 if ( dojump > 0 ) then {
     GRLIB_last_halo_jump = time;
-    halo_position = halo_position getPos [random 250, random 360];
+    halo_position = halo_position getPos [random 250, random 360]; //250 360
     halo_position = [ halo_position select 0, halo_position select 1, 1000 ]; //GRLIB_halo_altitude + (random 200)
     halojumping = true;
     sleep 0.1;
@@ -58,7 +58,9 @@ if ( dojump > 0 ) then {
 	resetCamShake; 														//Stops camera shake
 	_veh animateSource ["Doors", 1];									//Opens doors
 	
-	
-    //waitUntil { !alive player || isTouchingGround player };
+	//player action ["getOut",vehicle _veh];								//ejects player
+	sleep 300;
+	deleteVehicle _veh;													//Deletes drop pod
+    
     
 };
