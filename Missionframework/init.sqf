@@ -2,7 +2,7 @@
 KPLIB_init = false;
 
 // Version of the KP Liberation framework
-KP_liberation_version = [0, 96, "7a"];
+KP_liberation_version = [0, 96, "7a9"];
 
 enableSaving [ false, false ];
 

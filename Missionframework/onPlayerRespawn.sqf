@@ -13,7 +13,8 @@ if (isNil "GRLIB_respawn_loadout") then {
     player linkItem "ItemMap";
     player linkItem "ItemCompass";
     player linkItem "ItemWatch";
-    player linkItem "ItemRadio";
+    player linkItem "tf_anprc152"; 		//ItemRadio
+	player linkItem "ItemGPS";			//Added in
 } else {
     sleep 4;
     [player, GRLIB_respawn_loadout] call KPLIB_fnc_setLoadout;
