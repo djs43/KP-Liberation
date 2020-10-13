@@ -36,6 +36,10 @@ isNil {
     _unit = _groupTemp createUnit [_type, _spawnPos, [], _placement, "FORM"];
     _unit addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
     _unit setRank _rank;
+	
+	_unit setSkill ["aimingSpeed", 0.01];				//Hopefully no more T9000
+	_unit setSkill ["aimingAccuracy", 0.01];
+
 
     // Join to target group to preserve Side
     [_unit] joinSilent _group;

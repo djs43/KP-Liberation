@@ -3,9 +3,12 @@ TODO
 Non Code:
 	Setup Discord
 	Bug people to join our server
+	Edit mission file so player slots are halo units
+	
 
 Code:
 	Arsenal Blacklist/Whitelist
+	Add 3rd person vehicles script
 	Sort out AI skill
 	Add more drop pod sounds
 		wind sound when going down
@@ -18,3 +21,5 @@ Server Side:
 	Migrate TS to brothers server
 	Setup headless client on brothers server
 	Move next to router/ethernet
+	defib mod
+	aceX?
