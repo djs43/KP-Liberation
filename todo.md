@@ -1,3 +1,20 @@
-1) Get basics working
-	1.1) Get classnames of basic halo units/weapons
-	1.2) edit "custom preset" to only have a select few halo presets
+TODO
+
+Non Code:
+	Setup Discord
+	Bug people to join our server
+
+Code:
+	Arsenal Blacklist/Whitelist
+	Sort out AI skill
+	Add more drop pod sounds
+		wind sound when going down
+		maybe mac cannon sound as player drops into orbit
+			maybe just use another 105mm shell to simulate pod comming into atmosphere
+	Look into migrating to HALO map
+	
+
+Server Side:
+	Migrate TS to brothers server
+	Setup headless client on brothers server
+	Move next to router/ethernet
