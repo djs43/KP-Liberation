@@ -10,6 +10,7 @@ class CfgSounds {
         name = "dropPod";
         sound[] = {"res\dropPODv2.ogg", 1.0, 1};
         titles[] = {};
+	};
 };
 
 class RscTitles {
