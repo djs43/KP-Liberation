@@ -5,6 +5,11 @@ class CfgSounds {
         sound[] = {"res\c130.ogg", 1.0, 1};
         titles[] = {};
     };
+	
+	class droppod	{
+        name = "dropPod";
+        sound[] = {"res\dropPODv2.ogg", 1.0, 1};
+        titles[] = {};
 };
 
 class RscTitles {

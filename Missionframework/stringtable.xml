@@ -2701,7 +2701,7 @@
             <Czech>Jste si jistý že chcete zabalit FOB?</Czech>
         </Key>
         <Key ID="STR_HALO_PARAM">
-            <Original>HALO Jump</Original>
+            <Original>ODST DROP</Original>
             <French>Saut HALO</French>
             <German>HALO-Sprung</German>
             <Spanish>Salto HALO</Spanish>
@@ -2799,7 +2799,7 @@
             <Czech>Zapnuto - 30 minut cooldown</Czech>
         </Key>
         <Key ID="STR_HALO_DENIED_COOLDOWN">
-            <Original>Can't perform HALO jump, you are on cooldown for %1 more minute(s).</Original>
+            <Original>Can't perform ODST drop, Orbital drop crew needs %1 more minute(s).</Original>
             <French>Impossible d'effectuer un suat HALO, vous êtes en cooldown pour encore %1 minute(s).</French>
             <German>HALO Sprung noch nicht möglich. Verbleibende Abklingzeit von %1 Minuten.</German>
             <Spanish>No puedes saltar en HALO, te quedan %1 minuto(s) de espera.</Spanish>
@@ -2813,7 +2813,7 @@
             <Czech>Nemůžete použít HALO skok, musíte počkat %1 minut</Czech>
         </Key>
         <Key ID="STR_HALO_ACTION">
-            <Original>-- HALO JUMP</Original>
+            <Original>-- ODST DROP</Original>
             <French>-- SAUT HALO</French>
             <German>-- HALO-SPRUNG</German>
             <Spanish>-- SALTO HALO</Spanish>
@@ -2827,7 +2827,7 @@
             <Czech>-- HALO SKOK</Czech>
         </Key>
         <Key ID="STR_HALO_TITLE">
-            <Original>HALO JUMP</Original>
+            <Original>ODST DROP</Original>
             <French>SAUT HALO</French>
             <German>HALO-SPRUNG</German>
             <Spanish>SALTO HALO</Spanish>

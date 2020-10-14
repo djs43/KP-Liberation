@@ -34,19 +34,29 @@ if ( dialog ) then {
 [ "halo_map_event", "onMapSingleClick" ] call BIS_fnc_removeStackedEventHandler;
 
 if ( dojump > 0 ) then {
-    GRLIB_last_halo_jump = time;
+	GRLIB_last_halo_jump = time;
     halo_position = halo_position getPos [random 250, random 360]; //250 360
     halo_position = [ halo_position select 0, halo_position select 1, 1000 ]; //GRLIB_halo_altitude + (random 200)
     halojumping = true;
     sleep 0.1;
     cutRsc ["fasttravel", "PLAIN", 1];
-    playSound "parasound";
+    //player say2D "dropPod";
+	_sound = "Item_muzzle_snds_L" createVehicle position player;		//This need to be deleted later, so sound source has to be attached to any generic object that shouldent be seen
+	
+	
     sleep 1;
     
 	_veh = "OPTRE_HEV" createVehicle halo_position;						//creates drop pod
     _veh setpos halo_position;											//moves drop pod to halo marker and height
 	player moveInAny _veh;												//moves player inside drop pod
 	addCamShake [5, 60, 25];											//Adds 60 sec of camera shake
+	_veh setVelocity [0, 0, -50];										//Gives the entry vehicle a speed bost
+	
+	_sound attachTo [_veh, [0, 0, 0]]; 									//Attaches the sound source to entry vehicle
+	[_sound, player] say2D "dropPod";									//Player drop pod sound from sound source
+	
+	
+	
     sleep 4;
     halojumping = false;
 	
@@ -54,13 +64,15 @@ if ( dojump > 0 ) then {
 	p = getPos _veh; 													
 	a = "Sh_105mm_HEAT_MP" createVehicle p; 							
 	a setVelocity [0, 0, -100];											//get pos of drop pod, creates a shell going downwards at the base of pod to simulate impact
+	_veh setVelocity [0, 0, 0];											//Zero out velocity of drop pod
+	deleteVehicle _sound;												//Force stops the sound by deleting sound creating object
 	sleep 1;
 	resetCamShake; 														//Stops camera shake
 	_veh animateSource ["Doors", 1];									//Opens doors
 	
 	//player action ["getOut",vehicle _veh];								//ejects player
 	sleep 300;
-	deleteVehicle _veh;													//Deletes drop pod
+	deleteVehicle _veh;														//Deletes drop pod
     
     
 };
