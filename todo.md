@@ -15,6 +15,11 @@ Code:
 		maybe mac cannon sound as player drops into orbit
 			maybe just use another 105mm shell to simulate pod comming into atmosphere
 	Look into migrating to HALO map
+	Fix Pelican Class Names - May require server restart
+	Add Towed AT to Buy menu if possible (may be opfor only?)
+	Remove OP Terminator tanks from OPFOR
+
+	
 	
 
 Server Side:
