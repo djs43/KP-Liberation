@@ -18,6 +18,9 @@ Code:
 	Fix Pelican Class Names - May require server restart
 	Add Towed AT to Buy menu if possible (may be opfor only?)
 	Remove OP Terminator tanks from OPFOR
+	Update the OPFOR random RPG spawner from RPG to HALO RPG
+		Make sure it doesn't conflict with the preset
+		File path - KP-Liberation\Missionframework\functions\fn_spawnGuerillaGroup.sqf
 
 	
 	
