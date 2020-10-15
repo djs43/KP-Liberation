@@ -69,8 +69,8 @@ if ( dojump > 0 ) then {
 	_veh setVectorDir _dirVector;												//Sets the pods orientation to players orientation
 	_veh setVelocity [0, 0, -750];												//Gives the entry vehicle a speed bost
 	
-	p1 = getPos _veh; 																						
-	_s = "Sh_155mm_AMOS" createVehicle p;										//Beefy 155 gives incomming sound	
+	_p1 = getPos _veh; 																						
+	_s = "Sh_155mm_AMOS" createVehicle _p1;										//Beefy 155 gives incomming sound	
 	_s attachTo [_veh, [0, 0, -75]];											//Adds it 75m below the pod so it super loud
 	
 	
