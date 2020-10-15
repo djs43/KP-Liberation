@@ -53,7 +53,7 @@ if ( dojump > 0 ) then {
 	addCamShake [5, 60, 25];											//Adds 60 sec of camera shake
 	
 	
-	_fire = "#particlesource" createVehicleLocal position _veh;		//Creates fire effect
+	_fire = "#particlesource" createVehicleLocal position _veh;			//Creates fire effect
 	_fire setParticleClass "ObjectDestructionFire1Smallx";
 	_fire attachTo [_veh,[0,0,0]];
 	
@@ -71,7 +71,7 @@ if ( dojump > 0 ) then {
 	
 	_p1 = getPos _veh; 																						
 	_s = "Sh_155mm_AMOS" createVehicle _p1;										//Beefy 155 gives incomming sound	
-	_s attachTo [_veh, [0, 0, -75]];											//Adds it 75m below the pod so it super loud
+	_s attachTo [_veh, [0, 0, 2]];											//Adds it 10m above so it doesent blow up when pod hits ground
 	
 	
 	while {(getPosATL _veh) select 2 > 800} do {								//Holds script up until pod is below 800m
@@ -91,22 +91,19 @@ if ( dojump > 0 ) then {
 		_veh setVelocity [0, 0, ((_alt select 2) * -1)];							//Sets velocity to altitude, ie 600m = -600m/s, 200m = -200m/s
 //		systemchat str _vel;
 //		systemchat str _alt;
-		if (((getPosATL _veh) select 2 < 300) && _fireAlive) then {					//Fire gets deleted below 300m, only happens once
-			_fireAlive = false;
-			deleteVehicle _fire;													//gets rid of fire before it hits ground
-			deleteVehicle _s;														//Delete 155m shell
-		};
 		
 		sleep .25
 	};
 	
 	_veh setVelocity [0, 0, -100];										//Slow entry down 1 last time
 	
-    //sleep 2;
+    
     halojumping = false;
 	
 	waitUntil { isTouchingGround _veh };								//Suspends execution until vehicle is touching ground
+	deleteVehicle _s;													//Deletes 155mm
 	_veh setVelocity [0, 0, 0];											//Zero out velocity of drop pod
+	deleteVehicle _fire;												//Deletes fire
 	p = getPos _veh; 													
 	a = "Sh_105mm_HEAT_MP" createVehicle p; 							
 	a setVelocity [0, 0, -10];											//get pos of drop pod, creates a shell going downwards at the base of pod to simulate impact
