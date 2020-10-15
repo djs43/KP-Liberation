@@ -49,6 +49,7 @@ if ( dojump > 0 ) then {
 	_veh = "OPTRE_HEV" createVehicle position player;					//creates drop pod
     _veh setpos halo_position;											//moves drop pod to halo marker and height
 	player moveInAny _veh;												//moves player inside drop pod
+	_veh setVehicleLock "LOCKED";										//Locks the player inside the pod
 	
 	addCamShake [5, 60, 25];											//Adds 60 sec of camera shake
 	
@@ -69,9 +70,10 @@ if ( dojump > 0 ) then {
 	_veh setVectorDir _dirVector;												//Sets the pods orientation to players orientation
 	_veh setVelocity [0, 0, -750];												//Gives the entry vehicle a speed bost
 	
-	_p1 = getPos _veh; 																						
-	_s = "Sh_155mm_AMOS" createVehicle _p1;										//Beefy 155 gives incomming sound	
-	_s attachTo [_veh, [0, 0, 2]];											//Adds it 10m above so it doesent blow up when pod hits ground
+	
+	//_s attachTo [_veh, [0, 0, 2]];											//Adds it 10m above so it doesent blow up when pod hits ground
+	
+	//_s setVelocity [0, 0, -50];
 	
 	
 	while {(getPosATL _veh) select 2 > 800} do {								//Holds script up until pod is below 800m
@@ -84,35 +86,43 @@ if ( dojump > 0 ) then {
 	
 	
 	_fireAlive = true;																//Used to handle condition in next while loop										
+	_shellCreated = false;
 	
 	while {(getPosATL _veh) select 2 > 100} do {									//Handles velocity/slow down between 800m and 100m
 		_alt = getPosATL _veh;														//Gets current altitude
 //		_vel = velocity _veh;
 		_veh setVelocity [0, 0, ((_alt select 2) * -1)];							//Sets velocity to altitude, ie 600m = -600m/s, 200m = -200m/s
-//		systemchat str _vel;
-//		systemchat str _alt;
+		if (((getPosATL _veh) select 2 < 600) && (! _shellCreated)) then {			
+			_shellCreated = true;																								//Ensures condition only happens once
+			_p1 = getPos _veh;
+			_s = "SatchelCharge_Remote_Ammo" createVehicle [(_p1 select 0) + 0, (_p1 select 1) + 0, (_p1 select 2) + 5];		//Creates satchel just above pod
+			_s setDamage 1;																										//Blows up sachel
+			
+		};
 		
 		sleep .25
 	};
 	
 	_veh setVelocity [0, 0, -100];										//Slow entry down 1 last time
-	
+	_veh setVehicleLock "UNLOCKED";										//Unlocks the pod before it touches ground incase it bugs out
     
     halojumping = false;
 	
 	waitUntil { isTouchingGround _veh };								//Suspends execution until vehicle is touching ground
-	deleteVehicle _s;													//Deletes 155mm
 	_veh setVelocity [0, 0, 0];											//Zero out velocity of drop pod
 	deleteVehicle _fire;												//Deletes fire
 	p = getPos _veh; 													
-	a = "Sh_105mm_HEAT_MP" createVehicle p; 							
-	a setVelocity [0, 0, -10];											//get pos of drop pod, creates a shell going downwards at the base of pod to simulate impact
+	a = "Sh_125mm_HEAT" createVehicle p; 								//Creates 125mm right below pod to simulate it hitting round from space
+	a setVelocity [0, 0, -10];											//force the 125mm to hit ground
+
 	deleteVehicle _sound;												//Force stops the sound by deleting sound creating object
 	sleep 1;
 	resetCamShake; 														//Stops camera shake
+	sleep 5;
 	_veh animateSource ["Doors", 1];									//Opens doors
 	
-	//player action ["getOut",vehicle _veh];								//ejects player
+	player action ["getOut",vehicle _veh];								//ejects player
+	_veh setVehicleLock "LOCKED";										//Locks the vehicle
 	sleep 300;
 	deleteVehicle _veh;														//Deletes drop pod
     
